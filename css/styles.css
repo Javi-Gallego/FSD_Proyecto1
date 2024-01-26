@@ -20,7 +20,7 @@ header {
     justify-content: center;
 }
 
-#abrirMenu, #cerrarMenu {
+#abrirMenu, #cerrarMenu,#abrirMenu2, #cerrarMenu2,#abrirMenu3, #cerrarMenu3 {
     height: 3em;
     width: 3em;
     display: none;
@@ -33,14 +33,14 @@ header {
     width: 80vw;
 }
 
-#menuNav {
+#menuNav, #menuNav2, #menuNav3 {
     display: flex;
     flex-direction: row;
     border-top: 0.1em solid black;
     justify-content: center;
     font-size: 2rem;
     width: 100vw;
-    padding: 0 2.5em;
+    padding: 0 /*2.5em*/;
     gap: 3em;
 }
 
@@ -63,7 +63,6 @@ header {
 
 
 footer {
-    padding: 2em;
     border-top: 0.2em solid black;
     background-color: grey;
     color: white;
@@ -76,21 +75,21 @@ footer {
 
 @media (width < 600px) {
 
-    #abrirMenu, #cerrarMenu {
+    #abrirMenu, #cerrarMenu, #abrirMenu2, #cerrarMenu2, #abrirMenu3, #cerrarMenu3 {
         display: block;
     }
 
-    #abrirMenu img {
+    #abrirMenu img, #abrirMenu2 img, #abrirMenu3 img {
         height: 3em;
         width: 3em;
     }
     
-    #cerrarMenu img {
+    #cerrarMenu img, #cerrarMenu2 img, #cerrarMenu3 img {
         height: 2em;
         width: 2em;
     }
 
-    #menuNav {
+    #menuNav, #menuNav2, #menuNav3 {
         flex-direction: column;
         justify-content: start;
         align-items: left;
@@ -107,7 +106,7 @@ footer {
         box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
     }
 
-    #cerrarMenu {
+    #cerrarMenu, #cerrarMenu2, #cerrarMenu3 {
         display: flex;
         justify-content: center;
     }
@@ -132,10 +131,17 @@ footer {
         opacity: 0;
         visibility: hidden;
     }
-    #menuNav .visible {
+    /*#menuNav */.visible {
         opacity: 1;
         visibility: visible;
         color: red;
     }
 
+}
+
+@media (width < 400px) {
+
+    #logo {
+        font-size: 3rem;
+    }
 }
