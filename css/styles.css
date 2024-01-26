@@ -12,35 +12,38 @@
 }
 
 header {
+    background-color: rgb(49, 215, 159);
     width: 100vw;
-    border-bottom: 0.1em solid black;
+    border-bottom: 0.1em solid rgb(19, 139, 103);
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 }
 
-#abrirMenu, #cerrarMenu,#abrirMenu2, #cerrarMenu2,#abrirMenu3, #cerrarMenu3 {
-    height: 3em;
-    width: 3em;
+.filamenu1 {
+    height: 10em;
+}
+
+#abrirMenu, #cerrarMenu {
     display: none;
 }
 
 #logo {
     font-family: 'Laqhab';
-    text-align: center;
-    font-size: 6rem;
-    width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:saddlebrown
 }
 
-#menuNav, #menuNav2, #menuNav3 {
+#menuNav {
     display: flex;
     flex-direction: row;
-    border-top: 0.1em solid black;
+    border-top: 0.1em solid saddlebrown;
     justify-content: center;
     font-size: 2rem;
     width: 100vw;
-    padding: 0 /*2.5em*/;
     gap: 3em;
 }
 
@@ -52,7 +55,7 @@ header {
 
 .navOptions a {
     text-decoration: none;
-    color: rgb(15, 14, 14);
+    color:saddlebrown;
 }    
 
 .navOptions:hover {
@@ -60,11 +63,31 @@ header {
     text-shadow: 1px 1px 2px grey;
 }
 
+.sepSup {
+    height: 1.5em;
+}
 
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.foto {
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foto img {
+    width: 30em;
+}
 
 footer {
-    border-top: 0.2em solid black;
-    background-color: grey;
+    border-top: 0.2em solid saddlebrown;
+    background-color: rgb(133, 109, 92);
     color: white;
     width: 100vw;
     display:flex;
@@ -73,18 +96,42 @@ footer {
     align-items: center;
 }
 
+.map {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (width < 770px) {
+
+    .filamenu1 {
+        height: 8em;
+    }
+}
+
 @media (width < 600px) {
 
-    #abrirMenu, #cerrarMenu, #abrirMenu2, #cerrarMenu2, #abrirMenu3, #cerrarMenu3 {
-        display: block;
+    .filamenu1 {
+        height: 7em;
+    }
+    
+    .depega {
+        display: none;
     }
 
-    #abrirMenu img, #abrirMenu2 img, #abrirMenu3 img {
+    #abrirMenu, #cerrarMenu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #abrirMenu img {
         height: 3em;
         width: 3em;
     }
     
-    #cerrarMenu img, #cerrarMenu2 img, #cerrarMenu3 img {
+    #cerrarMenu img {
         height: 2em;
         width: 2em;
     }
@@ -102,18 +149,13 @@ footer {
         height: 100vh;
         max-width: 50vw;
         font-size: 1.5rem;
-        background-color: black;
+        background-color: rgb(39, 20, 6);
         box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
     }
 
     #cerrarMenu, #cerrarMenu2, #cerrarMenu3 {
         display: flex;
         justify-content: center;
-    }
-
-    #logo {
-        font-size: 4rem;
-        padding: 0 0 0 1em;
     }
 
     .navOptions {
@@ -131,17 +173,16 @@ footer {
         opacity: 0;
         visibility: hidden;
     }
-    /*#menuNav */.visible {
+    .visible {
         opacity: 1;
         visibility: visible;
-        color: red;
     }
 
 }
 
-@media (width < 400px) {
+@media (width < 500px) {
 
-    #logo {
-        font-size: 3rem;
+    .filamenu1 {
+        height: 5em;
     }
 }
