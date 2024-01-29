@@ -11,7 +11,7 @@
     font-weight: normal;
 }
 .footrow {
-    width: 100%;
+    width: 100vw;
 }
 header {
     background-color: rgb(37, 83, 72);
@@ -104,10 +104,9 @@ body, section {
 }
 
 footer {
-    border-top: 0.2em solid rgb(37, 83, 72);
     background-color: rgb(37, 83, 72);
     color: white;
-    width: 100vw;
+
     display:flex;
     flex-direction: column;
     justify-content: center;
@@ -125,15 +124,21 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
-    padding: 0 3em;
+    align-items: center;
+}
+
+.rrssFooterColumn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .dev {
     height: 3em;
     display: flex;
     flex-direction: row;
-    justify-content: end;
+    justify-content: center;
 }
 
 .contlinks {
@@ -167,6 +172,7 @@ footer {
     height: 15em;
     width: 12em;
 }
+
 .textoTitCarta {
     display: flex;
     flex-direction: row;
@@ -186,9 +192,27 @@ footer {
     justify-content: flex-start;
     padding: 0;
 }
+
+.centrartitulo {
+    height: 15em;
+}
+
+.cenesup{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.ceneinf {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
 .cenefa {
     width: 40em;
 }
+
 .apartadoTexto {
     width: 8em;
 }
@@ -208,8 +232,31 @@ footer {
     font-weight: normal;
 }
 
+.form {
+    width: 100vw;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.RRSS {
+    width: 100vw;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+} 
+
+.iconRRSS img {
+    width: 3em;
+}
+
 @media (width < 992px) {
-    .titularCarta, .imgcarta {
+    .titularCarta, .imgcarta, .centrartitulo {
         height: 10em;
     }
 }
@@ -220,8 +267,12 @@ footer {
         height: 8em;
     }
 
-    .titularCarta, .imgcarta {
+    .titularCarta, .imgcarta, .centrartitulo {
         height: 9em;
+    }
+
+    .apartadoTexto2 {
+        width: 4em;
     }
 }
 
@@ -291,24 +342,12 @@ footer {
         font-size: 1em;
     }
 
-    .titularCarta, .imgcarta {
+    .titularCarta, .imgcarta, .centrartitulo {
         height: 8em;
     }
 
     .platos {
         font-size: 0.9em;
-    }
-   
-    .r1 {
-        width: 100vw;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    } 
-
-    .iconRRSS img {
-        width: 3em;
     }
 }
 
@@ -321,6 +360,10 @@ footer {
     .platos {
         font-size: 0.7em;
     }
+
+    .titularCarta, .imgcarta, .centrartitulo {
+        height: 6em;
+    }
 }
 
 @media (width < 410px) {
@@ -330,7 +373,11 @@ footer {
         width: 2em;
     }
 
-    .titularCarta, .imgcarta {
-        height: 6em;
+    .titularCarta, .imgcarta, .centrartitulo {
+        height: 5em;
+    }
+
+    .apartadoTexto2 {
+        width: 3em;
     }
 }
