@@ -25,7 +25,7 @@ header {
     height: 10em;
 }
 
-#abrirMenu, #cerrarMenu {
+#abrirMenu, #cerrarMenu, .menuIcon {
     display: none;
 }
 
@@ -106,13 +106,6 @@ footer {
 
 .footrow {
     width: 100%;
-}
-
-.map {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
 }
 
 .infoDireccion {
@@ -222,37 +215,96 @@ footer {
     font-weight: bold;
 }
 
+.flechaArriba {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    color: rgb(37, 83, 72);
+    font-weight: bold;
+}
+
+.flechaArriba img {
+    height: 2.5em;
+    width: 2.5em;
+}
+
 .italic {
     font-style: italic;
     font-weight: normal;
 }
 
-.formsection {
-    width: 99vw;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.form {
-    width: 15em;
-}
-
-.RRSS {
+.centrarFormulario {
     width: 99vw;
 
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 2em;
-} 
+}
+
+.contactoform {
+    width: 80vw;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.formsection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    width: 15em;
+}
+
+.btn {
+    background-color: rgb(37, 83, 72);
+    color: white;
+}
+
+.btn:hover {
+    background-color: rgb(52, 117, 102);
+    border: 2px solid black;
+    font-weight: bold;
+    scale: 0.8;
+}
+
+.RRSS {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
 
 .iconRRSS img {
     width: 3em;
+}
+
+.map {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.phone {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 2em;
+}
+
+.phone img {
+    width: 1.5em;
 }
 
 @media (width < 992px) {
@@ -300,6 +352,11 @@ footer {
     #cerrarMenu img {
         height: 2em;
         width: 2em;
+    }
+
+    .menuIcon {
+        display: inline;
+        width: 1em;
     }
 
     #menuNav {
