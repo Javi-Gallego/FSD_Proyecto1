@@ -1,6 +1,6 @@
 # -The office- Restaurant landing page :man_cook:
 
-Welcome to the 1st project at the GeeksHubs Academy. It consists of a little web of a restaurant in which we can see their food and get in contact with them. The office is a real restaurant in Calicanto.
+Welcome to the 1st project for the GeeksHubs Academy. It consists of a little web of a restaurant in which we can see their food and get in contact with them. The office is a real restaurant in Calicanto.
 
 ## Table of Contents 🗂️
 
@@ -24,11 +24,11 @@ You can see a preview of the landing page [here](https://javi-gallego.github.io/
 
 ## <a id="features">Features 🌟</a>
 
-The font used as the title is the same font used by the real restaurant, i thought that was important so I searched throught internet and downloaded the one that resembled more. Finally I edited the title with Photoshop and didn't need to use the font in the html, only as an image.
+The font used for the title is the same font used by the real restaurant, I thought that was important so I searched throught internet and downloaded the one that resembled more. Finally I edited the title with Photoshop and did not need to use the font in the html, only as an image.
 
-The names, prices and photos of the dishes are real. I got them from their Instagram. Also, the links to FaceBook and Instagram point to their real profiles.
+The names, prices and photos of the dishes are real. I got them from their Instagram. Also, the links to Facebook and Instagram point to their real profiles.
 
-Although it was an HTML and CSS project I've added a few javascript lines to hide/show the navbar in mobile devices.
+Although it was an HTML and CSS project I have added a few javascript lines to hide/show the navbar in mobile devices.
 
 You can check their real pages:
 [Landing page](https://theoffice.makro.bar/?lang=es)
